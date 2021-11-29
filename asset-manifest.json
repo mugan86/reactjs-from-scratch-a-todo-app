@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactjs-from-scratch-a-todo-app/static/css/main.948be16a.chunk.css",
+    "main.js": "/reactjs-from-scratch-a-todo-app/static/js/main.f583c36a.chunk.js",
+    "main.js.map": "/reactjs-from-scratch-a-todo-app/static/js/main.f583c36a.chunk.js.map",
+    "runtime-main.js": "/reactjs-from-scratch-a-todo-app/static/js/runtime-main.33df0332.js",
+    "runtime-main.js.map": "/reactjs-from-scratch-a-todo-app/static/js/runtime-main.33df0332.js.map",
+    "static/js/2.bea4f53b.chunk.js": "/reactjs-from-scratch-a-todo-app/static/js/2.bea4f53b.chunk.js",
+    "static/js/2.bea4f53b.chunk.js.map": "/reactjs-from-scratch-a-todo-app/static/js/2.bea4f53b.chunk.js.map",
+    "static/js/3.fff72010.chunk.js": "/reactjs-from-scratch-a-todo-app/static/js/3.fff72010.chunk.js",
+    "static/js/3.fff72010.chunk.js.map": "/reactjs-from-scratch-a-todo-app/static/js/3.fff72010.chunk.js.map",
+    "index.html": "/reactjs-from-scratch-a-todo-app/index.html",
+    "static/css/main.948be16a.chunk.css.map": "/reactjs-from-scratch-a-todo-app/static/css/main.948be16a.chunk.css.map",
+    "static/js/2.bea4f53b.chunk.js.LICENSE.txt": "/reactjs-from-scratch-a-todo-app/static/js/2.bea4f53b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33df0332.js",
+    "static/js/2.bea4f53b.chunk.js",
+    "static/css/main.948be16a.chunk.css",
+    "static/js/main.f583c36a.chunk.js"
+  ]
+}
