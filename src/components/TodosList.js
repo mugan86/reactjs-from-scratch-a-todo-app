@@ -5,7 +5,12 @@ const TodosList = (props) => {
     <ul>
       {props.todos.map((todo) => (
         // Añadimos "key" que hace función de "track-by" en ngFor Angular
-        <TodoItem key={todo.id} todo={todo} />
+        <TodoItem
+          key={todo.id}
+          todo={todo}
+          handleChangeProps={props.handleChangeProps}
+          deleteTodoProps={props.deleteTodoProps}
+        />
       ))}
     </ul>
   );

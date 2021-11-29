@@ -1,0 +1,45 @@
+import React, { Component } from "react";
+
+class InputTodo extends Component {
+  state = {
+    title: "",
+  };
+  onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (this.state.title.trim()) {
+      // Enviamos la información del título añadido al padre (TodoContainer)
+      // Nos comunicamos desde aquí
+      this.props.addTodoProps(this.state.title);
+      // Reseteamos la información del input
+      this.setState({
+        title: "",
+      });
+    } else {
+      alert("Please write item");
+    }
+  };
+  // addTodoProps lo usamos para comunicarnos con "addTodoProps"
+  // del padre (TodoContainer), que es addTodoProps: {this.addItem}
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input
+          type="text"
+          placeholder="Add Todo..."
+          value={this.state.title}
+          name="title"
+          onChange={this.onChange}
+        />
+        <button>Submit</button>
+      </form>
+    );
+  }
+}
+
+export default InputTodo;
