@@ -1,16 +1,14 @@
 import React from "react";
-
-class TodosList extends React.Component {
-  render() {
-    return (
-      <ul>
-        {this.props.todos.map((todo) => (
-          // Añadimos "key" que hace función de "tracb-by" en ngFor Angular
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
-    );
-  }
-}
+import TodoItem from "./TodoItem";
+const TodosList = (props) => {
+  return (
+    <ul>
+      {props.todos.map((todo) => (
+        // Añadimos "key" que hace función de "track-by" en ngFor Angular
+        <TodoItem key={todo.id} todo={todo} />
+      ))}
+    </ul>
+  );
+};
 
 export default TodosList;
