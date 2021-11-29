@@ -4,6 +4,9 @@ import Header from "./Header";
 import InputTodo from "./InputTodo";
 import { v4 as uuidv4 } from "uuid";
 
+//styles sheets
+import "./../App.css";
+
 class TodoContainer extends React.Component {
   state = {
     todos: [
@@ -52,29 +55,33 @@ class TodoContainer extends React.Component {
     });
   };
 
-  addTodoItem = title => {
+  addTodoItem = (title) => {
     const newTodo = {
       // ID nuevo asignado teniendo en cuenta el ID del último elemento + 1
       id: uuidv4(),
       title: title,
-      completed: false
+      completed: false,
     };
     // Actualizamos el stado con la nueva tarea
     this.setState({
-      todos: [...this.state.todos, newTodo]
+      todos: [...this.state.todos, newTodo],
     });
-  }
+  };
 
   render() {
     return (
       <React.Fragment>
-        <Header />
-        <InputTodo addTodoProps={this.addTodoItem} />
-        <TodosList
-          todos={this.state.todos}
-          handleChangeProps={this.handleChange}
-          deleteTodoProps={this.delTodo}
-        />
+        <div className="container">
+          <div className="inner">
+            <Header />
+            <InputTodo addTodoProps={this.addTodoItem} />
+            <TodosList
+              todos={this.state.todos}
+              handleChangeProps={this.handleChange}
+              deleteTodoProps={this.delTodo}
+            />
+          </div>
+        </div>
       </React.Fragment>
     );
   }

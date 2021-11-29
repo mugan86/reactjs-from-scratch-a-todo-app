@@ -5,6 +5,10 @@ import reportWebVitals from "./reportWebVitals";
 
 //component file
 import TodoContainer from "./components/TodoContainer";
+
+//styles sheets
+import "./App.css";
+
 // React.StrictMode, para obteener notificaciones más detalladas de posibles problemas
 ReactDOM.render(
   <React.StrictMode> 
