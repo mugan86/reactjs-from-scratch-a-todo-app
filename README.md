@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Linter configuration
+
+To check code and view errors, we must need Linter (ESLinter).
+
+In Visual Studio Code, go to [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and install.
+
+After install extension, go to project, and add **.eslintrc** file in root directory and add next code:
+```
+{
+    "extends": "react-app"
+}
+```
+To Check if linter is well config, go to **App.js** file and remove **alt** property in **img** selector.
+
+If all well config, the linter show error to notify error and error description.
+
+![Linter error check](screens/1-linter-error.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
